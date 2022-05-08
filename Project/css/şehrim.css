@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.mp-header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    transition: 0.5em ease; 
+    background:rgba(15, 15, 15, 50%);
+}
+
+.mp-title {
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation {
+    position: relative;
+}
+
+.navigation-left {
+    padding-top: 5px;
+    float: left;
+    position: relative;
+    color: #000;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+.navigation-right {
+    padding-top: 5px;
+    float: right;
+    position: relative;
+    color: #000;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+.navigation-left:before {
+    content: '';
+    position: absolute;
+    background: #000 ;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease;
+
+}
+
+.navigation-left:hover:before {
+    width: 100%;
+}
+
+.navigation-right:before {
+    content: '';
+    position: absolute;
+    background: rgba(15, 15, 15, 50%) ;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease;
+
+}
+
+.navigation-right:hover:before {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.mp-footer {
+    background-color: #272727;
+    
+}
+
+.mp-footer-logo {
+
+}
+
+.mp-footer-content {
+
+}
+
+.mp-footer-socials {
+    display: flex;
+    
+}
+
+.mp-footer-socials ul {
+    display: flex;
+    padding: 0;
+    margin: auto;
+}
+
+.mp-footer-icon {
+    list-style: none;
+    
+}
+
+.mp-footer-icon a {
+    padding: 5px 10px;
+    color: red;
+}
+
+.mp-footer-icon img {
+    width:50px;
+    height:50px;
+}
+
+.mp-footer hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-style: inset;
+    border-width: 1px;
+    border-color: rgb(192, 100, 19);
+}
+
+.mp-footer-contact {
+    text-align: center;
+    color: white;
+}
+
+.mp-footer-bot {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18;
+    background-color: #3f3f3f;
+}

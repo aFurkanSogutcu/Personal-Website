@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mp-header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    transition: 0.5em ease; 
+    background:rgba(15, 15, 15, 50%);
+}
+
+.mp-title {
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation {
+    position: relative;
+}
+
+.navigation-left {
+    padding-top: 5px;
+    float: left;
+    position: relative;
+    color: #000;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+.navigation-right {
+    padding-top: 5px;
+    float: right;
+    position: relative;
+    color: #000;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+.navigation-left:before {
+    content: '';
+    position: absolute;
+    background: #000 ;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease;
+
+}
+
+.navigation-left:hover:before {
+    width: 100%;
+}
+
+.navigation-right:before {
+    content: '';
+    position: absolute;
+    background: rgba(15, 15, 15, 50%) ;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease;
+
+}
+
+.navigation-right:hover:before {
+    width: 100%;
+}
+
+
+
+.mp-firstlook-background {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 1100px;
+    background-position: 80%;
+    background-size: cover;
+    background-image: url(../img/mp-foto1.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.mp-firstlook {
+    background-color:rgba(15, 15, 15, 0.5);
+    padding: 25% 5% 5%;    
+    font-family: Open , sans-serif;
+}
+
+.mp-firstlook-inside {
+    background-color:rgba(33, 33, 33, 0.7);
+    padding: 2%;
+    z-index: 888;
+    color: white ;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.mp-firstlook-inside h1 {
+    font-size: 5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.mp-firstlook-inside p {
+    font-size: 20px;
+    margin-bottom: 65px;
+}
+
+.mp-content {    
+    padding: 100px 200px;
+    position: relative;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background:rgba(15, 15, 15, 50%);
+}
+
+.Hakkımda {
+
+}
+
+.Hakkımda p {
+
+}
+
+.Hakkımda h1 {
+
+}
+
+.Hobilerim {
+
+}
+
+.Hobilerim p {
+    
+}
+
+.Hobilerim h1 {
+
+}
+
+.mp-footer {
+    background-color: #272727;
+    
+}
+
+.mp-footer-logo {
+
+}
+
+.mp-footer-content {
+
+}
+
+.mp-footer-socials {
+    display: flex;
+    
+}
+
+.mp-footer-socials ul {
+    display: flex;
+    padding: 0;
+    margin: auto;
+}
+
+.mp-footer-icon {
+    list-style: none;
+    
+}
+
+.mp-footer-icon a {
+    padding: 5px 10px;
+    color: red;
+}
+
+.mp-footer-icon img {
+    width:50px;
+    height:50px;
+}
+
+.mp-footer hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-style: inset;
+    border-width: 1px;
+    border-color: rgb(192, 100, 19);
+}
+
+.mp-footer-contact {
+    text-align: center;
+    color: white;
+}
+
+.mp-footer-bot {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18;
+    background-color: #3f3f3f;
+}
