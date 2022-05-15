@@ -1,0 +1,3 @@
+git init yapılmadı
+
+masaüstündekini buraya aktar

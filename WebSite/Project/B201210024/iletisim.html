@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="css/iletisim.css">
+   
+</head>
+<body>
+     
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 py-4">
+                <h3 class="pb-2">İletişim Formu</h3>
+                <form name="iletisim-form" id="iletisim" method="post" action="iletisimBilgileri.php"
+                    onsubmit="return dogrula();" role="form">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Ad *</label>
+                                    <input type="text" name="ad" class="form-control"
+                                        placeholder=" Lütfen adınızı girin *">
+                                </div>
+                            </div>
+                            <div class=" col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Soyad *</label>
+                                    <input type="text" name="soyad" class="form-control"
+                                        placeholder="Lütfen soyadınızı girin *">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>E-Posta *</label>
+                                    <input type="email" name="eposta" class="form-control"
+                                        placeholder="Lütfen e-posta adresinizi girin *">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Telefon *</label>
+                                    <input type="tel" name="telefon" class="form-control"
+                                        placeholder="Lütfen telefon numaranızı girin *">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Cinsiyet *</label><br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="cinsiyet" value="erkek">
+                                        <label class="form-check-label">Erkek</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="cinsiyet" value="kadin">
+                                        <label class="form-check-label">Kadın</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Konu *</label>
+                                    <select name="konu" class="form-control ">
+                                        <option value="" selected>-- Ülke Seçiniz --</option>
+                                        <option value="Türkiye">Türkiye</option>
+                                        <option value="Amerika">Amerika</option>
+                                        <option value="İngiltere">İngiltere</option>
+                                        <option value="Diğer">Diğer</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Mesajınız *</label>
+                                    <textarea id="form_message" name="mesaj" class="form-control"
+                                        placeholder="Lütfen iletişime geçmek istediğiniz konuyu kısa bir şekilde açıklayın. *"
+                                        rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" name="#submit" class="btn btn-" value="Gönder">
+                                <input type="reset" class="btn btn-primary" value="Temizle">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <p class="text-danger">
+                                    * İle işaretlenmiş alanların doldurulması zorunludur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> 
+    <script>
+        const myForm = document.getElementById("iletisim");
+
+        myForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const request = new XMLHttpRequest();
+
+            request.open("post","iletisimBilgileri.php");
+
+            request.onload = function (){
+                console.log(request.responseText);
+            }
+            request.send(new FormData(myForm));
+        });
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+
+    <script src="js/iletisim.js"></script> 
+</body>
+</html>

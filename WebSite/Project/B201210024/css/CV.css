@@ -5,7 +5,8 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.mp-header {
+
+.cv-header {
     z-index: 999;
     position: absolute;
     top: 0;
@@ -18,28 +19,19 @@
     background:rgba(15, 15, 15, 50%);
 }
 
-.mp-title {
-    float: left;
-    margin-left: 30px;
-    position: relative;
-    color: #000;
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-}
 
 .navigation {
     position: relative;
+    
 }
 
 .navigation-left {
     padding-top: 5px;
     float: left;
     position: relative;
-    color: #000;
+    color: rgb(209, 112, 0);
     font-size: 1em;
-    font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
     margin-left: 30px;
     transition: 0.3s ease;
@@ -49,9 +41,9 @@
     padding-top: 5px;
     float: right;
     position: relative;
-    color: #000;
+    color: rgb(209, 112, 0);
     font-size: 1em;
-    font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
     margin-left: 30px;
     transition: 0.3s ease;
@@ -60,7 +52,7 @@
 .navigation-left:before {
     content: '';
     position: absolute;
-    background: #000 ;
+    background: rgb(31, 31, 31);
     width: 0;
     height: 3px;
     bottom: 0;
@@ -76,7 +68,7 @@
 .navigation-right:before {
     content: '';
     position: absolute;
-    background: rgba(15, 15, 15, 50%) ;
+    background: rgb(31, 31, 31);
     width: 0;
     height: 3px;
     bottom: 0;
@@ -89,125 +81,123 @@
     width: 100%;
 }
 
+.cv-content {
+    padding: 100px 250px;
+}
 
+.cv-profile {
+    padding: 20px 30px;
+    text-align: center;
+}
 
-.mp-firstlook-background {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 1100px;
-    background-position: 80%;
-    background-size: cover;
-    background-image: url(../img/mp-foto1.jpg);
-    background-repeat: no-repeat;
-    position: relative;
+.cv-profile img {
+    margin: 5px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(209, 112, 0);
+    object-fit: cover;
+}
+
+.cv-profile h3 {
+    margin: 5px 0 10px;
+}
+
+.cv-profile p {
+    margin: 5px 0 10px;
+}
+
+.cv-links {
+    margin: 5px;
     
 }
 
-.mp-firstlook {
-    background-color:rgba(15, 15, 15, 0.5);
-    padding: 25% 5% 5%;    
-    font-family: Open , sans-serif;
+.cv-links a {
+    padding: 5px 10px;
+    font-size: 0px;
+   
 }
 
-.mp-firstlook-inside {
-    background-color:rgba(33, 33, 33, 0.7);
-    padding: 2%;
-    z-index: 888;
-    color: white ;
-    width: 70%;
-    margin-top: 50px;
+
+.cv-links img {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    
 }
 
-.mp-firstlook-inside h1 {
-    font-size: 5em;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 75px;
-    margin-bottom: 40px;
-}
-
-.mp-firstlook-inside p {
+.aboutme {
     font-size: 20px;
-    margin-bottom: 65px;
 }
 
-.mp-content {    
-    padding: 100px 200px;
-    position: relative;
-    width: 100%;
-    min-height: 10vh;
+.aboutme h2 {
+    margin-bottom: 15px ;
+    margin-top: 15px;
+}
+
+.aboutme p { 
+    margin-bottom: 10px ;
+}
+
+.education {
+    font-size: 20px;
+    text-align: center;
+}
+
+.okul {
+    margin-top: 5px;
+}
+
+.beceriler {
+    margin-top: 15px;
+    font-size: 20px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background:rgba(15, 15, 15, 50%);
 }
 
-.Hakkımda {
-
+.beceri {
+    flex: 1 1 250px;
 }
 
-.Hakkımda p {
-
+.beceri span {
+    color: rgb(209, 112, 0);
 }
 
-.Hakkımda h1 {
-
+.yazilim {
+    font-size: 20px;
 }
 
-.Hobilerim {
-
-}
-
-.Hobilerim p {
-    
-}
-
-.Hobilerim h1 {
-
-}
-
-.mp-footer {
+.cv-footer {
     background-color: #272727;
     
 }
 
-.mp-footer-logo {
-
-}
-
-.mp-footer-content {
-
-}
-
-.mp-footer-socials {
+.cv-footer-socials {
     display: flex;
     
 }
 
-.mp-footer-socials ul {
+.cv-footer-socials ul {
     display: flex;
     padding: 0;
     margin: auto;
 }
 
-.mp-footer-icon {
+.cv-footer-icon {
     list-style: none;
     
 }
 
-.mp-footer-icon a {
+.cv-footer-icon a {
     padding: 5px 10px;
     color: red;
 }
 
-.mp-footer-icon img {
+.cv-footer-icon img {
     width:50px;
     height:50px;
 }
 
-.mp-footer hr {
+.cv-footer hr {
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -218,12 +208,12 @@
     border-color: rgb(192, 100, 19);
 }
 
-.mp-footer-contact {
+.cv-footer-contact {
     text-align: center;
     color: white;
 }
 
-.mp-footer-bot {
+.cv-footer-bot {
     padding: 10px;
     text-align: center;
     color: white;

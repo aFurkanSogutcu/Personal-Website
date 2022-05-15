@@ -19,28 +19,19 @@
     background:rgba(15, 15, 15, 50%);
 }
 
-.mp-title {
-    float: left;
-    margin-left: 30px;
-    position: relative;
-    color: #000;
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-}
 
 .navigation {
     position: relative;
+    
 }
 
 .navigation-left {
     padding-top: 5px;
     float: left;
     position: relative;
-    color: #000;
+    color: rgb(209, 112, 0);
     font-size: 1em;
-    font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
     margin-left: 30px;
     transition: 0.3s ease;
@@ -50,9 +41,9 @@
     padding-top: 5px;
     float: right;
     position: relative;
-    color: #000;
+    color: rgb(209, 112, 0);
     font-size: 1em;
-    font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
     margin-left: 30px;
     transition: 0.3s ease;
@@ -61,7 +52,7 @@
 .navigation-left:before {
     content: '';
     position: absolute;
-    background: #000 ;
+    background: rgb(31, 31, 31);
     width: 0;
     height: 3px;
     bottom: 0;
@@ -77,7 +68,7 @@
 .navigation-right:before {
     content: '';
     position: absolute;
-    background: rgba(15, 15, 15, 50%) ;
+    background: rgb(31, 31, 31);
     width: 0;
     height: 3px;
     bottom: 0;
@@ -90,24 +81,52 @@
     width: 100%;
 }
 
+.mp-content {  
+    font-size: 20px;  
+    padding: 100px ;
+    position: relative;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+}
 
+.Hakkımda {
+    margin-bottom: 10px;
+}
 
+.Hakkımda-content h1 {
+    color: rgb(103, 103, 255);
+}
 
+.Hobilerim {
+    margin-top: 15px;   
+}
 
+.Hobilerim-content h1 {
+    color: rgb(103, 103, 255);
+}
 
+.Hobiler {
+    display: flex;
+    margin-top: 50px;
+}
+
+.Hobiler a {
+    text-decoration: none;
+    color: brown;
+}
+
+.Hobiler h2 {
+    color: blue;
+}
 
 
 .mp-footer {
     background-color: #272727;
     
-}
-
-.mp-footer-logo {
-
-}
-
-.mp-footer-content {
-
 }
 
 .mp-footer-socials {
@@ -128,7 +147,6 @@
 
 .mp-footer-icon a {
     padding: 5px 10px;
-    color: red;
 }
 
 .mp-footer-icon img {
@@ -144,7 +162,7 @@
     margin-right: 50px;
     border-style: inset;
     border-width: 1px;
-    border-color: rgb(192, 100, 19);
+    border-color: rgb(192, 19, 19);
 }
 
 .mp-footer-contact {
